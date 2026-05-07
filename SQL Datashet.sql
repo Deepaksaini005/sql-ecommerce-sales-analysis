@@ -132,6 +132,7 @@ select * from orders;
 -- 2️⃣ Show the **top 5 most expensive orders**.
 -- 3️⃣ Show the **latest 10 orders**.
 select order_id , customer_name , city , product_category , product_name , quantity , price , order_date from orders limit 10;
+select * from orders limit  10;   -- other method for uper question --
 select product_name  , price from orders  order by price  desc limit 5;
 select order_date , product_name , price from orders order by order_date desc limit 10;
 
