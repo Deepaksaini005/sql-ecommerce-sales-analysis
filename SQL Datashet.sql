@@ -190,7 +190,7 @@ select  customer_name , count(*) as three_orders from orders group by customer_n
 ### 🔥 Problem 1
 -- Find **second highest priced product sold**.
  select * from orders; 
-SELECT DISTINCT price , product_name FROM orders ORDER BY price DESC LIMIT 1 OFFSET 1;
+SELECT DISTINCT price , product_name FROM orders ORDER BY price DESC LIMIT 1 OFFSET 1;  -- OFFSET is used to skip a specific number of rows before returning the result.
 
 
 ### 🔥 Problem 2
